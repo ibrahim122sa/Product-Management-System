@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    color: white;
+    font-family: system-ui;
+    transition: background 0.2s linear;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+input{
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 30px;
+    margin: 4px 0px;
+    padding: 2px 2px;
+    background-color: #111;
+    border-radius: 5px;
+    color: #fff;
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.005);
+}
+.price input{
+    width: 20%;
+}
+#total{
+    background-color: darkred;
+    border-radius: 4px;
+    margin: 5px 2px;
+    padding: 8px 40px 8px 5px;
+}
+#total::before{
+    content: 'Total: ';
+}
+button{
+    width: 100%;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(29, 3, 43);
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(57, 4, 90);
+    letter-spacing: 1px;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+
+}
+.btnsearch button{
+    width: 40%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+}
+table thead tr td{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+#btndeleteall{
+    margin: 10px 0px;
+}
+
+.label{
+    background-color: rgb(57, 4, 90);
+    border-radius: 50px;
+    display: flex;
+    width: 50px;
+    height: 23px;
+    position: relative;
+}
+.ball{
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+body.dark{
+    background-color: #fff;
+}
+.mode{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.text-white{
+    color: white;
+}
+.text-black{
+    color: black;
+    font-weight: 700;
+    font-family: system-ui;
+}
